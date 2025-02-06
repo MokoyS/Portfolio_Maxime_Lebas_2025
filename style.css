@@ -1,0 +1,37 @@
+@import url(css/Header.css);
+@import url(css/Fonts.css);
+@import url(css/Container.css);
+@import url(css/Home.css);
+@import url(css/HomeButton.css);
+@import url(css/About.css);
+@import url(css/Outils.css);
+@import url(css/Education.css);
+@import url(css/BlueP.css);
+@import url(css/work.css);
+@import url(css/contact.css);
+@import url(css/footer.css);
+
+/**
+ * RESET
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+body {
+    background-color: rgba(24, 24, 27, 1);
+}

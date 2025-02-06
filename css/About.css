@@ -1,0 +1,32 @@
+#about {
+    padding-top: 8rem;
+
+}
+
+.about-content {
+    background-color: rgb(39 39 42 / 0.5);
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 100%;
+}
+
+.about-content-text {
+    width: 100%;
+}
+
+.about-content p {
+    color: rgb(212, 212, 216 );
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 60ch;
+    
+}
+
+.about-content h1 {
+    text-align: end;
+    width: 100%;
+}
+
+.about-content-bottom {
+    width: 100%;
+}
