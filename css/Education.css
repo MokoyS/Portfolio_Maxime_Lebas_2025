@@ -44,12 +44,12 @@
     display: flex;
     flex-direction: row;
     gap: 0.6rem;
-    align-items: center;
+    align-items: start;
 }
 .education-card-text div p{
     color: rgb(161, 161, 170) ;
     border-radius: 0.5rem;
-    padding: 0.4rem;
+    padding-left: 5px ;
     font-style: italic;
     margin-left: 10px;
 }

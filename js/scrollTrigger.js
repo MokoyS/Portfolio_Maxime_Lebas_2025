@@ -11,9 +11,8 @@ document.querySelectorAll(".about-content").forEach(card => {
             start: "top 80%",
             end: "bottom 0%",
             onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 }),
-            onLeave: () => gsap.to(card, { opacity: 0, y: 100, duration: 1, zIndex: 0 }), 
-            onEnterBack: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 }), 
-            onLeaveBack: () => gsap.to(card, { opacity: 0, y: 100, duration: 1, zIndex: 0 })
+            onEnterBack: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 })
+            // onLeave et onLeaveBack retirés
         }
     });
 });
@@ -29,9 +28,8 @@ document.querySelectorAll(".outils-card, #outils h2, .outils-p, .education-card,
             start: "top 95%",
             end: "bottom 0%",
             onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 }),
-            onLeave: () => gsap.to(card, { opacity: 0, y: 100, duration: 1, zIndex: 0 }),
-            onEnterBack: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 }), 
-            onLeaveBack: () => gsap.to(card, { opacity: 0, y: 100, duration: 1, zIndex: 0 }) 
+            onEnterBack: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, zIndex: 0 })
+            // onLeave et onLeaveBack retirés
         }
     });
 });

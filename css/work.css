@@ -97,3 +97,10 @@
 .work-card-bottom-link img {
     height: 1.5rem;
 }
+
+.work-card-bottom-detail {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
