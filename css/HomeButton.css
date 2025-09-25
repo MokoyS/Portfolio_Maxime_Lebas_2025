@@ -21,20 +21,24 @@
     line-height: 1.25rem;
     font-weight: 500;
     gap: 0.5rem;
-    
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.home-text-bottom a:nth-child(1) {
+.home-text-bottom a img {
+    height: 1.2rem;
+}
+
+.home-text-bottom a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgb(15 23 42 / 0.2);
+}
+
+.cta-primary {
     color: rgb(9, 9, 11);
     background-color: rgb(56, 189, 248);
 }
 
-.home-text-bottom a:nth-child(2) {
+.cta-secondary {
     color: rgb(161, 161, 170);
     background-color: rgb(39, 39, 42);
-    
-}
-
-.home-text-bottom img {
-    height: 1.2rem;
 }

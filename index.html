@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Maxime Lebas, développeur front-end spécialisé dans les expériences web accessibles et performantes. Découvrez ses projets, son parcours et contactez-le."
+    />
     <title>Maxime - Portfolio</title>
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" />
@@ -26,16 +30,16 @@
     <div id="blue-point-3"></div>
     <header>
       <div class="navbar">
-        <a class="logo" href="index.html"><h1>M</h1></a>
+        <a class="logo" href="#home" aria-label="Retour à l'accueil"><h1>M</h1></a>
         <div class="nav">
           <nav class="allmenuitem">
-            <a class="menuItem" href="#home">Home</a>
-            <a class="menuItem" href="#about">About</a>
-            <a class="menuItem" href="#work">Work</a>
+            <a class="menuItem" href="#home">Accueil</a>
+            <a class="menuItem" href="#about">À propos</a>
+            <a class="menuItem" href="#work">Projets</a>
             <a class="menuItem" href="#contact">Contact</a>
           </nav>
         </div>
-        <a class="btn-contact" href="#contact">Contactez Moi</a>
+        <a class="btn-contact" href="#contact">Discutons ensemble</a>
       </div>
     </header>
     <main>
@@ -44,7 +48,12 @@
           <div class="home-contente">
             <div class="home-text">
               <div class="home-text-top">
-                <img src="images/photo-profil.png" alt="" />
+                <img
+                  src="images/photo-profil.png"
+                  alt="Portrait de Maxime Lebas"
+                  width="64"
+                  height="64"
+                />
                 <div class="blink">
                   <span class="green-dot">
                     <span class="green-dot-blink animate-ping"></span>
@@ -52,21 +61,51 @@
                 </div>
                 <p>Disponible</p>
               </div>
-              <h2>Maxime Lebas,<br />Étudiant en Developpement Web</h2>
+              <h1>
+                Maxime Lebas,<br />développeur front-end qui conçoit des interfaces
+                utiles et accessibles
+              </h1>
+              <p class="home-lead">
+                J’accompagne les marques, startups et associations dans la
+                création d’expériences web performantes, inclusives et faciles à
+                maintenir.
+              </p>
+              <ul class="home-highlights">
+                <li><span>+15</span> projets web livrés en autonomie ou en équipe</li>
+                <li>
+                  Spécialisé en intégration responsive, animations subtiles et
+                  performance front
+                </li>
+                <li>En recherche d’alternance front-end à partir de septembre 2025</li>
+              </ul>
               <div class="home-text-bottom">
-                <a href="MaximeCV.pdf" target="_blank"
-                  >Télécharge mon cv <img src="images/download.svg" alt=""
-                /></a>
-                <a href="#about"
-                  >Jette un coup d'oeil<img
+                <a class="cta-primary" href="MaximeCV.pdf" target="_blank"
+                  >Télécharger mon CV
+                  <img
+                    src="images/download.svg"
+                    alt="Icône de téléchargement"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+                <a class="cta-secondary" href="#about"
+                  >Découvrir mon profil
+                  <img
                     src="images/arrow-down.svg"
-                    alt="arrow go down"
+                    alt="Flèche vers le bas"
+                    width="20"
+                    height="20"
                   />
                 </a>
               </div>
             </div>
             <div class="home-image">
-              <img src="images/photo-home.png" alt="" />
+              <img
+                src="images/photo-home.png"
+                alt="Maxime Lebas travaillant sur un ordinateur portable"
+                width="500"
+                height="500"
+              />
             </div>
           </div>
         </div>
@@ -75,13 +114,23 @@
         <div class="container">
           <div class="about-content">
             <div class="about-content-text">
+              <h2>À propos de moi</h2>
               <p>
-                Bienvenue ! Étudiant en développement web à l’IIM. Pour moi,
-                coder, c’est un peu comme composer de la musique : il faut de la
-                rigueur, de l’intuition, et surtout le sens de l’harmonie.
-                J’aime transformer une simple idée en une interface claire, puis
-                en une expérience fluide et vivante. Mon objectif ? Créer du
-                beau, du rapide, et surtout du sens. 💻
+                Étudiant en développement web à l’IIM, je transforme les idées en
+                produits digitaux au service des utilisateurs. Mon approche
+                combine rigueur technique, sens du design et culture produit.
+              </p>
+              <p>
+                Après plusieurs projets en freelance et en équipe, j’ai
+                développé une expertise sur les interfaces responsives, la
+                performance front et les animations qui servent le contenu.
+                J’interviens de la conception (maquettage, design system) jusqu’à
+                l’intégration pixel perfect, en veillant à l’accessibilité.
+              </p>
+              <p>
+                Je recherche une alternance front-end à partir de septembre 2025
+                pour continuer à progresser au sein d’une équipe produit ou
+                tech. Parlons ensemble de votre prochain défi !
               </p>
             </div>
             <div class="about-content-bottom">
@@ -94,164 +143,272 @@
         <div class="container">
           <h2>
             Ma boite à outils
-            <img class="build" src="images/build.svg" alt="" />
+            <img
+              class="build"
+              src="images/build.svg"
+              alt="Icône de clé"
+              width="32"
+              height="32"
+            />
           </h2>
           <p class="outils-p">
-            Les outils et technologies que j'utilise pour faires mes sites
-            internet.
+            Les outils et technologies que j’utilise pour concevoir des
+            expériences web complètes, de la maquette au déploiement.
           </p>
           <div class="outils-content">
             <div class="outils-card">
               <figure>
-                <img src="images/outils/css.svg" alt="" />
+                <img
+                  src="images/outils/css.svg"
+                  alt="Logo CSS"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>CSS</h3>
-                <p>Interface Utilisateur</p>
+                <p>Interfaces responsives et accessibles</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/html.svg" alt="" />
+                <img
+                  src="images/outils/html.svg"
+                  alt="Logo HTML"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>HTML</h3>
-                <p>To build site</p>
+                <p>Intégration sémantique & SEO</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/java.svg" alt="" />
+                <img
+                  src="images/outils/java.svg"
+                  alt="Logo JavaScript"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>JavaScript</h3>
-                <p>Interaction</p>
+                <p>Interactions dynamiques et API</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/sass.svg" alt="" />
+                <img
+                  src="images/outils/sass.svg"
+                  alt="Logo Sass"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Sass</h3>
-                <p>Styling</p>
+                <p>Design system maintenable</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/tail.svg" alt="" />
+                <img
+                  src="images/outils/tail.svg"
+                  alt="Logo TailwindCSS"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>TailwindCSS</h3>
-                <p>Interface Utilisateur</p>
+                <p>Design system utilitaire</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/wordpress.svg" alt="" />
+                <img
+                  src="images/outils/wordpress.svg"
+                  alt="Logo WordPress"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>WordPress</h3>
-                <p>CMS</p>
+                <p>Sites éditoriaux optimisés</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/adobe.svg" alt="" />
+                <img
+                  src="images/outils/adobe.svg"
+                  alt="Logo Suite Adobe"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Suite Adobe</h3>
-                <p>Design</p>
+                <p>Identité visuelle & prototypage</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/figma.svg" alt="" />
+                <img
+                  src="images/outils/figma.svg"
+                  alt="Logo Figma"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Figma</h3>
-                <p>Wireframe & Prototypage</p>
+                <p>Wireframes interactifs & protos</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/office.svg" alt="" />
+                <img
+                  src="images/outils/office.svg"
+                  alt="Logo Microsoft 365"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
-                <h3>Office 360</h3>
-                <p>Organisation</p>
+                <h3>Microsoft 365</h3>
+                <p>Gestion de projet & reporting</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/notion.svg" alt="" />
+                <img
+                  src="images/outils/notion.svg"
+                  alt="Logo Notion"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Notion</h3>
-                <p>Team Work</p>
+                <p>Documentation et suivi agile</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/Git_icon.png" alt="" />
+                <img
+                  src="images/outils/Git_icon.png"
+                  alt="Logo Git"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Git</h3>
-                <p>Versioning</p>
+                <p>Versioning & bonnes pratiques</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/vue.svg" alt="" />
+                <img
+                  src="images/outils/vue.svg"
+                  alt="Logo Vue.js"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Vue.js</h3>
-                <p>Framework</p>
+                <p>Applications web modulaires</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/Logo Next.js.svg" alt="" />
+                <img
+                  src="images/outils/Logo Next.js.svg"
+                  alt="Logo Next.js"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Next.js</h3>
-                <p>Framework</p>
+                <p>Sites statiques & SSR</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/react.svg" alt="" />
+                <img
+                  src="images/outils/react.svg"
+                  alt="Logo React"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>React</h3>
-                <p>bibliothèque JavaScript</p>
+                <p>Interfaces composables</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/sql.svg" alt="" />
+                <img
+                  src="images/outils/sql.svg"
+                  alt="Logo SQL"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>SQL</h3>
-                <p>Database</p>
+                <p>Bases de données relationnelles</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/gsap-greensock.svg" alt="" />
+                <img
+                  src="images/outils/gsap-greensock.svg"
+                  alt="Logo GSAP"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>GSAP</h3>
-                <p>Animations</p>
+                <p>Animations fluides et maîtrisées</p>
               </div>
             </div>
             <div class="outils-card">
               <figure>
-                <img src="images/outils/Symfon.svg" alt="" />
+                <img
+                  src="images/outils/Symfon.svg"
+                  alt="Logo Symfony"
+                  width="64"
+                  height="64"
+                  loading="lazy"
+                />
               </figure>
               <div class="outils-text">
                 <h3>Symfony</h3>
-                <p>Back End</p>
+                <p>Back-end robuste</p>
               </div>
             </div>
           </div>
@@ -265,7 +422,13 @@
             <div class="education-card">
               <div class="education-card-image">
                 <figure>
-                  <img src="images/education/IIM.png" alt="" />
+                  <img
+                    src="images/education/IIM.png"
+                    alt="Logo de l'IIM Léonard de Vinci"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                  />
                 </figure>
               </div>
               <div class="education-card-text">
@@ -282,7 +445,13 @@
             <div class="education-card">
               <div class="education-card-image">
                 <figure>
-                  <img src="images/education/hate.svg" alt="" />
+                  <img
+                    src="images/education/hate.svg"
+                    alt="Logo du lycée Alain"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                  />
                 </figure>
               </div>
               <div class="education-card-text">
@@ -296,7 +465,13 @@
             <div class="education-card">
               <div class="education-card-image">
                 <figure>
-                  <img src="images/education/auburn.png" alt="" />
+                  <img
+                    src="images/education/auburn.png"
+                    alt="Logo d'Auburn High School"
+                    width="120"
+                    height="120"
+                    loading="lazy"
+                  />
                 </figure>
               </div>
               <div class="education-card-text">
@@ -313,147 +488,377 @@
       <section id="work">
         <div class="container">
           <h2 class="work-h2">Mes projets</h2>
-          <p class="work-p">Retrouvez mes projets web</p>
+          <p class="work-p">
+            Une sélection de réalisations front-end mêlant design, accessibilité
+            et performance. Chaque projet inclut un lien vers la démo ou le code
+            source.
+          </p>
           <div class="work-content">
-            <a href="http://lauraschott.com/" target="_blank">
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/Laura.png" alt="" />
-                </figure>
-                <div class="work-card-bottom">
-                  <div class="work-card-bottom-detail">
-                    <h3>Laura Schott - Portfolio</h3>
-                    <div class="work-card-tags">
-                      <span>Portfolio</span>
-                      <span>Dev</span>
-                      <span>Front</span>
-                    </div>
+            <a
+              class="work-card"
+              href="http://lauraschott.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure>
+                <img
+                  src="images/work/Laura.png"
+                  alt="aperçu du portfolio de Laura Schott"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
+                <div class="work-card-bottom-detail">
+                  <h3>Laura Schott – Portfolio</h3>
+                  <p>
+                    Refonte complète d’un portfolio d’artiste avec mise en avant
+                    des œuvres, animations légères et optimisation SEO.
+                  </p>
+                  <div class="work-card-tags">
+                    <span>Next.js</span>
+                    <span>Design system</span>
+                    <span>SEO</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
             <a
+              class="work-card"
               href="https://mokoys.github.io/Exchangerate-App/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/Exchange.jpg" alt="" />
-                </figure>
-                <div class="work-card-bottom">
+              <figure>
+                <img
+                  src="images/work/Exchange.jpg"
+                  alt="Interface de l’application de conversion de devises"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
                   <div class="work-card-bottom-detail">
-                    <h3>Exchangerate App</h3>
-                    <div class="work-card-tags">
-                      <span>JS</span>
-                      <span>API</span>
-                    </div>
+                    <h3>ExchangeRate App</h3>
+                    <p>
+                      Application responsive connectée à une API pour comparer les
+                      taux de change en temps réel avec gestion d’erreurs claire.
+                    </p>
+                  <div class="work-card-tags">
+                    <span>TypeScript</span>
+                    <span>API REST</span>
+                    <span>UX mobile</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
             <a
+              class="work-card"
               href="https://mokoys.github.io/ToDoList_TypeScript/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/Todo.jpeg" alt="" />
-                </figure>
-                <div class="work-card-bottom">
-                  <div class="work-card-bottom-detail">
-                    <h3>TaskMaster / Login System</h3>
-                    <div class="work-card-tags">
-                      <span>TS</span>
-                      <span>Dev</span>
-                      <span>Front</span>
-                    </div>
+              <figure>
+                <img
+                  src="images/work/Todo.jpeg"
+                  alt="Capture de l’application de gestion de tâches"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
+                <div class="work-card-bottom-detail">
+                  <h3>TaskMaster</h3>
+                  <p>
+                    To-do list typée avec authentification fictive, stockage
+                    local et animations pour suivre la progression au quotidien.
+                  </p>
+                  <div class="work-card-tags">
+                    <span>TypeScript</span>
+                    <span>State management</span>
+                    <span>UI animée</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
             <a
+              class="work-card"
               href="https://mokoys.github.io/Access_recycle/index.html"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/stan.png" alt="" />
-                </figure>
-                <div class="work-card-bottom">
-                  <div class="work-card-bottom-detail">
-                    <h3>Access Recycle</h3>
-                    <div class="work-card-tags">
-                      <span>Vitrine</span>
-                      <span>Dev</span>
-                      <span>Front</span>
-                    </div>
+              <figure>
+                <img
+                  src="images/work/stan.png"
+                  alt="Site Access Recycle présentant des services de recyclage"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
+                <div class="work-card-bottom-detail">
+                  <h3>Access Recycle</h3>
+                  <p>
+                    Site vitrine pour une entreprise de recyclage avec parcours
+                    utilisateur simplifié et mise en avant des engagements RSE.
+                  </p>
+                  <div class="work-card-tags">
+                    <span>HTML/CSS</span>
+                    <span>Accessibilité</span>
+                    <span>SEO local</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
-            <a href="https://mokoys.github.io/Text-to-feeling/" target="_blank">
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/feel.jpeg" alt="" />
-                </figure>
-                <div class="work-card-bottom">
-                  <div class="work-card-bottom-detail">
-                    <h3>Text To Feeling</h3>
-                    <div class="work-card-tags">
-                      <span>IA</span>
-                      <span>Dev</span>
-                      <span>API</span>
-                    </div>
+            <a
+              class="work-card"
+              href="https://mokoys.github.io/Text-to-feeling/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure>
+                <img
+                  src="images/work/feel.jpeg"
+                  alt="Interface de l’outil Text to Feeling"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
+                <div class="work-card-bottom-detail">
+                  <h3>Text to Feeling</h3>
+                  <p>
+                    Expérimentation IA qui analyse le ton d’un message et propose
+                    une réponse empathique adaptée via une API générative.
+                  </p>
+                  <div class="work-card-tags">
+                    <span>IA générative</span>
+                    <span>UX writing</span>
+                    <span>API</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
-            <a href="https://www.cyllene-solution.com/" target="_blank">
-              <div class="work-card">
-                <figure>
-                  <img src="images/work/cyllene.png" alt="" />
-                </figure>
-                <div class="work-card-bottom">
-                  <div class="work-card-bottom-detail">
-                    <h3>Cyllene Solution</h3>
-                    <div class="work-card-tags">
-                      <span>Front</span>
-                      <span>Dev</span>
-                    </div>
+            <a
+              class="work-card"
+              href="https://www.cyllene-solution.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure>
+                <img
+                  src="images/work/cyllene.png"
+                  alt="Page d’accueil de Cyllene Solution"
+                  loading="lazy"
+                  width="320"
+                  height="320"
+                />
+              </figure>
+              <div class="work-card-bottom">
+                <div class="work-card-bottom-detail">
+                  <h3>Cyllene Solution</h3>
+                  <p>
+                    Intégration front d’un site corporate avec composant design
+                    system, optimisation des performances et tracking analytique.
+                  </p>
+                  <div class="work-card-tags">
+                    <span>TailwindCSS</span>
+                    <span>Performance</span>
+                    <span>Analytics</span>
                   </div>
-                  <div class="work-card-bottom-link">
-                    <img src="images/arrow-up-right-svgrepo-com.svg" alt="" />
-                  </div>
+                </div>
+                <div class="work-card-bottom-link" aria-hidden="true">
+                  <img
+                    src="images/arrow-up-right-svgrepo-com.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
                 </div>
               </div>
             </a>
           </div>
         </div>
       </section>
+      <section id="testimonials">
+        <div class="container">
+          <div class="testimonials-heading">
+            <h2>Témoignages & certifications</h2>
+            <p>
+              Ils m’ont fait confiance pour co-construire des expériences web
+              qualitatives.
+            </p>
+          </div>
+          <div class="testimonials-grid">
+            <figure>
+              <blockquote>
+                « Maxime a su transformer un brief flou en une interface claire et
+                efficace. Nous avons gagné +35&nbsp;% de conversions sur notre
+                landing page. »
+              </blockquote>
+              <figcaption>
+                Laura Schott — Illustratrice indépendante
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                « Son sens du détail et sa maîtrise des animations ont fait la
+                différence lors de notre dernière refonte. Communication fluide et
+                respect des délais. »
+              </blockquote>
+              <figcaption>Stan B. — Fondateur Access Recycle</figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                Certification Opquast niveau Avancé — bonnes pratiques web,
+                accessibilité, performance et qualité de service.
+              </blockquote>
+              <figcaption>Score : 880 / 1000 (2024)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
       <section id="contact">
         <div class="container contact-grid">
           <div class="contact-infos">
-            <h2>Contactez moi<br />pour toutes demandes.</h2>
-            <p>Parlons de vous, parlons de moi, parlons projets !</p>
-            <br />
-            <p>Mail : Maximelebas03@gmail.com</p>
-            <p>Tel : +33 6 33 56 99 62</p>
+            <h2>Contactez-moi<br />pour votre prochain projet</h2>
+            <p>
+              Parlez-moi de vos enjeux, de votre audience et de vos objectifs.
+              Je reviendrai vers vous sous 48&nbsp;h avec des premières pistes.
+            </p>
+            <div class="contact-details">
+              <a href="mailto:maximelebas03@gmail.com">maximelebas03@gmail.com</a>
+              <a href="tel:+33633569962">+33&nbsp;6&nbsp;33&nbsp;56&nbsp;99&nbsp;62</a>
+            </div>
+            <div class="contact-social" aria-label="Réseaux sociaux">
+              <a
+                href="https://www.linkedin.com/in/maxime-lebas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil LinkedIn de Maxime Lebas"
+              >
+                <img
+                  src="images/linkedin-svgrepo-com(3).svg"
+                  alt="Logo LinkedIn"
+                  width="32"
+                  height="32"
+                />
+              </a>
+              <a
+                href="https://github.com/Mokoys"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Profil GitHub de Maxime Lebas"
+              >
+                <img
+                  src="images/github-svgrepo-com.svg"
+                  alt="Logo GitHub"
+                  width="32"
+                  height="32"
+                />
+              </a>
+            </div>
           </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mgejznre"
+            method="POST"
+          >
+            <div class="form-top">
+              <label class="mb-4" for="name"
+                >Votre nom
+                <input
+                  class="text-field"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nom et prénom"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+              <label class="mb-4" for="email"
+                >Votre email
+                <input
+                  class="text-field"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="nom@entreprise.com"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+            </div>
+            <label class="mb-4" for="project"
+              >Votre projet
+              <input
+                class="text-field"
+                type="text"
+                id="project"
+                name="project"
+                placeholder="Création d’un site vitrine, refonte, etc."
+                required
+              />
+            </label>
+            <label class="mb-4" for="message"
+              >Message
+              <textarea
+                class="text-field"
+                id="message"
+                name="message"
+                placeholder="Décrivez vos besoins, délais et objectifs"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Envoyer ma demande</button>
+          </form>
         </div>
       </section>
     </main>
@@ -465,11 +870,10 @@
     <script src="js/scroll.js"></script>
 
     <script src="js/ActiveMenu.js"></script>
+    <footer>
+      <div>
+        <p>&copy; Maxime Lebas 2025 — Portfolio pensé pour l’accessibilité.</p>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div>
-      <p>&copy; Maxime Lebas 2025</p>
-    </div>
-  </footer>
 </html>
-x

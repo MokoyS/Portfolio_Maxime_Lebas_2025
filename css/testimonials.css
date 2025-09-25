@@ -1,0 +1,54 @@
+#testimonials {
+    padding-top: 8rem;
+}
+
+.testimonials-heading {
+    display: grid;
+    gap: 1rem;
+    max-width: 70ch;
+    margin-bottom: 3rem;
+}
+
+.testimonials-heading h2 {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    color: rgb(228 228 231);
+}
+
+.testimonials-heading p {
+    color: rgb(161 161 170);
+    line-height: 1.7;
+}
+
+.testimonials-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.testimonials-grid figure {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(160deg, rgb(39 39 42 / 0.9), rgb(17 24 39 / 0.9));
+    border: 1px solid rgb(63 63 70 / 0.35);
+    display: grid;
+    gap: 1.25rem;
+}
+
+.testimonials-grid blockquote {
+    color: rgb(228 228 231);
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.testimonials-grid figcaption {
+    color: rgb(94 234 212);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .testimonials-grid figure {
+        padding: 1.5rem;
+    }
+}

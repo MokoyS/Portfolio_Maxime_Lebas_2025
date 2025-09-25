@@ -10,6 +10,7 @@
 @import url(css/work.css);
 @import url(css/contact.css);
 @import url(css/footer.css);
+@import url(css/testimonials.css);
 
 /**
  * RESET
@@ -30,6 +31,15 @@ html {
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgb(56 189 248);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
 }
 
 body {
